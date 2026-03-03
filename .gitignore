@@ -1,0 +1,8 @@
+/__pycache__
+/.venv
+/oxford-iiit-pet
+/PennFudanPed
+/runs
+yolov8n.pt
+/datasets/oxfordiiit
+/datasets/pennfudan

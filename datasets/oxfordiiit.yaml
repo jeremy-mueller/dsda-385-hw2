@@ -1,0 +1,16 @@
+path: oxfordiiit
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: bengal
+  1: egyptian mau
+  2: persian
+  3: ragdoll
+  4: sphynx
+  5: german shorthaired
+  6: japanese chin
+  7: chihuahua
+  8: yorkshire terrier
+  9: beagle
