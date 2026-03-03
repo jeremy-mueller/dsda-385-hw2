@@ -1,4 +1,4 @@
-# DSDA 385 - Homework 1
+# DSDA 385 - Homework 2
 
 ## Introduction
 The objective of this assignment was to train and evaluate two object detection models on small datasets. We intend to understand how these architectures work with limited data and GPU memory.
