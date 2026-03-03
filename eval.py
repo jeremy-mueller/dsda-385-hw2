@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from rcnn import get_model
 from torchmetrics.detection.mean_ap import MeanAveragePrecision
 
-def eval(test_loader, threshold=0.5):
+def eval(test_loader, model_name, dataset, threshold=0.5):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = get_model(num_classes=11)
     model.load_state_dict(torch.load("best_model.pth", map_location=device))
@@ -86,7 +86,7 @@ def eval(test_loader, threshold=0.5):
             width=3
         )
         plt.imshow(res.permute(1, 2, 0))
-        plt.title(f"Penn-Fudan R-CNN Detections")
+        plt.title(f"{dataset} {model_name} Detections")
         plt.legend().remove()
         plt.axis('off')
         plt.show()

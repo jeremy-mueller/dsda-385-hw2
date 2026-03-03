@@ -14,7 +14,7 @@ if __name__ == '__main__':
     if model == "rcnn":
         train(epochs=epochs, train_loader=train_loader, val_loader=val_loader)
 
-        eval(test_loader)
+        eval(test_loader, model, dataset)
     elif model == "yolo":
         model = YOLO("yolov8n.pt")
         results = model.train(data=f"datasets/{dataset}.yaml", epochs=epochs, batch=batch_size, imgsz=512)
